@@ -56,8 +56,8 @@
 
     <?php
 
-    foreach ($hotels as $key => $value) {
-        var_dump($value);
+    foreach ($hotels as $hotel) {
+        var_dump($hotel);
     }
 
     ?>
