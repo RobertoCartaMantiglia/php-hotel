@@ -54,9 +54,19 @@
 
     ?>
 
-    <h1 class="text-warning mb-3 text-center">Php Hotels list: </h1>
 
     <div class="container">
+
+        <h1 class="text-warning mb-3 text-center">Php Hotels list: </h1>
+
+        <div class="my-5">
+            <form action="./index.php" method="get">
+                <input type="text" placeholder="parcheggio">
+                <input type="text" placeholder="valutazione">
+                <button>Filtra</button>
+            </form>
+        </div>
+
         <?php
         foreach ($hotels as $hotel) {
             echo "<div class='border p-4'>";
