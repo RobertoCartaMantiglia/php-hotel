@@ -61,10 +61,10 @@
         foreach ($hotels as $hotel) {
             echo "<div class='border p-4'>";
             echo "<h2 class='text-danger'>{$hotel['name']}</h2>";
-            echo "<p>{$hotel['description']}</p>";
-            echo "<p>{$hotel['vote']}</p>";
-            echo "<p>{$hotel['parking']}</p>";
-            echo "<p>{$hotel['distance_to_center']}</p>";
+            echo "<p>Descrizione: {$hotel['description']}</p>";
+            echo "<p>Valutazione: {$hotel['vote']}</p>";
+            echo "<p>Parcheggio: {$hotel['parking']}</p>";
+            echo "<p>Distanza dal Centro Città: {$hotel['distance_to_center']}km</p>";
             echo "</div>";
         }
         ?>
