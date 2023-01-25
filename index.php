@@ -57,8 +57,9 @@
     <?php
 
     foreach ($hotels as $hotel) {
-        var_dump($hotel);
+        var_export($hotel);
     }
+
 
     ?>
 </body>
