@@ -53,20 +53,22 @@
     ];
 
     ?>
-    <h1 class="text-warning">php hotels list: </h1>
 
-    <?php
+    <h1 class="text-warning mb-3 text-center">Php Hotels list: </h1>
 
-    foreach ($hotels as $hotel) {
-        echo "<p>{$hotel['name']}</p>";
-        echo "<p>{$hotel['description']}</p>";
-        echo "<p>{$hotel['vote']}</p>";
-        echo "<p>{$hotel['parking']}</p>";
-        echo "<p>{$hotel['distance_to_center']}</p>";
-    }
-
-
-    ?>
+    <div class="container">
+        <?php
+        foreach ($hotels as $hotel) {
+            echo "<div class='border p-4'>";
+            echo "<h2 class='text-danger'>{$hotel['name']}</h2>";
+            echo "<p>{$hotel['description']}</p>";
+            echo "<p>{$hotel['vote']}</p>";
+            echo "<p>{$hotel['parking']}</p>";
+            echo "<p>{$hotel['distance_to_center']}</p>";
+            echo "</div>";
+        }
+        ?>
+    </div>
 </body>
 
 </html>
